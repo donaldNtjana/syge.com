@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Syge - Software Development & Data Analysis</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,300&display=swap');
+
+    body {
+      background-color: #22A699;
+      color: #ffffff;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 300;
+    }
+
+    .navbar {
+      background-color: #F24C3D;
+      color: #ffffff;
+      font-weight: 500;
+      font-size: 16px;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 999;
+    }
+
+    .navbar .navbar-brand {
+      color: #22A699;
+      font-weight: 500;
+      font-size: 20px;
+    }
+
+    .navbar .navbar-toggler-icon {
+      background-color: #ffffff;
+    }
+
+    .navbar .nav-link {
+      color: #ffffff;
+      font-weight: 300;
+      font-size: 16px;
+    }
+
+    .jumbotron {
+      background-color: #ffffff;
+      color: #000000;
+      margin-top: 56px; /* Added margin to accommodate the navbar height */
+      position: relative;
+      overflow: hidden;
+    }
+
+    .carousel-item {
+      height: 400px;
+    }
+
+    @media (max-width: 768px) {
+      .carousel-item {
+        height: 250 px;
+      }
+    }
+    
+    .carousel-caption h3,
+    .carousel-caption p,
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      color: black;
+    }
+    h1, p, span, a {
+    font-family: 'Source Sans Pro', sans-serif;
+    }
+    .navbar-nav {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 25px;
+    }
+
+    .footer {
+      background-color: #000000;
+      color: #ffffff;
+      padding: 20px 0;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-md">
+    <div class="container">
+      <a class="navbar-brand" href="#" style="font-family: 'Roboto', sans-serif; color: WHITE;">Syge</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <video src="videos/white_background.mp4" autoplay loop muted></video>
+          <div class="carousel-caption">
+            <h1 class="display-4">Welcome to <span style="color: #22A699;">Syge</span></h1>
+            <p class="lead">We specialize in software development and data analysis</p>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div id="services">
+      <h2>Our Services</h2>
+      <p>At Syge, we offer a range of services to meet your software development and data analysis needs:</p>
+      <ul>
+        <li>Custom Software Development</li>
+        <li>Data Analytics and Insights</li>
+        <li>Data Science Solutions</li>
+        <li>Consulting and Advisory Services</li>
+      </ul>
+    </div>
+
+    <div id="projects">
+      <h2>Our Projects</h2>
+      <p>Take a look at some of our recent projects:</p>
+      <div class="card-deck">
+        <div class="card">
+          <img class="card-img-top" src="project1.jpg" alt="Project 1">
+          <div class="card-body">
+            <h5 class="card-title">Project 1</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top" src="project2.jpg" alt="Project 2">
+          <div class="card-body">
+            <h5 class="card-title">Project 2</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="contact">
+      <h2>Contact Us</h2>
+      <p>Have any questions or want to discuss your project? Get in touch with us:</p>
+      <p>Email: donaldntjana@gmail.com</p>
+      <p>Phone: 081-568-7427</p>
+    </div>
+  </div>
+
+  <footer class="footer text-center">
+    <p>&copy; 2023 Syge. All rights reserved.</p>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs
