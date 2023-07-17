@@ -15,31 +15,39 @@
     }
 
     .navbar {
-  background-color: transparent;
-  color: #ffffff;
-  font-weight: 500;
-  font-size: 16px;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 999;
-}
+      background-color: transparent;
+      color: #ffffff;
+      font-weight: 500;
+      font-size: 16px;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 999;
+    }
 
-.navbar .navbar-brand {
-  color: #22A699;
-  font-weight: 500;
-  font-size: 20px;
-}
+    .navbar .navbar-brand {
+      color: #22A699;
+      font-weight: 500;
+      font-size: 20px;
+    }
 
-.navbar .navbar-toggler-icon {
-  background-color: #ffffff;
-}
+    .navbar .navbar-toggler-icon {
+      background-color: #ffffff;
+    }
 
-.navbar .nav-link {
-  color: #ffffff;
-  font-weight: 300;
-  font-size: 16px;
-}
+    .navbar .nav-link {
+      color: #ffffff;
+      font-weight: 300;
+      font-size: 16px;
+    }
+
+    .jumbotron {
+      background-color: #ffffff;
+      color: #000000;
+      margin-top: 56px; /* Added margin to accommodate the navbar height */
+      position: relative;
+      overflow: hidden;
+    }
 
     .carousel-item {
       height: 400px;
@@ -47,13 +55,22 @@
 
     @media (max-width: 768px) {
       .carousel-item {
-        height: 250px;
+        height: 250 px;
       }
     }
-
-    .carousel-caption h1,
-    .carousel-caption p {
+    
+    .carousel-caption h3,
+    .carousel-caption p,
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
       color: black;
+    }
+    h1, p, span, a {
+    font-family: 'Source Sans Pro', sans-serif;
+    }
+    .navbar-nav {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 25px;
     }
 
     .footer {
@@ -87,17 +104,16 @@
       </div>
     </div>
   </nav>
-  
 
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <video src="videos/white_background.mp4" autoplay loop muted></video>
-        <div class="carousel-caption">
-          <h1 class="display-4">Welcome to <span style="color: #22A699;">Syge</span></h1>
-          <p class="lead">We specialize in software development and data analysis</p>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <video src="videos/white_background.mp4" autoplay loop muted></video>
+          <div class="carousel-caption">
+            <h1 class="display-4">Welcome to <span style="color: #22A699;">Syge</span></h1>
+            <p class="lead">We specialize in software development and data analysis</p>
+          </div>
         </div>
-      </div>
     </div>
   </div>
 
@@ -113,23 +129,50 @@
       </ul>
     </div>
 
-    <div id="projects" style="background-color: #F7F7F7; padding: 30px;">
-      <h2 style="color: #000000;">Our Projects</h2>
-      <p style="color: #000000;">Take a look at some of our recent projects:</p>
-      <div class="card-deck">
-        <div class="card">
-            <h5 class="card-title" style="color: #000000;">School Management System</h5>
-            <ul style="color: #000000;">
-              <li>We have developed a cutting-edge School Management System that revolutionizes the learning experience.</li>
-              <li>Our system enables learners to write tests online, access educational materials, view marks and progress online, and provides an extensive online library with past papers and books.</li>
-              <li>It also empowers teachers and parents with seamless communication and access to relevant information.</li>
-              <li>With our School Management System, we strive to enhance educational efficiency and foster a collaborative learning environment.</li>
-            </ul>
+    <section id="projects">
+      <div class="container">
+        <h2>Our Expertise</h2>
+        <p>Discover what sets us apart:</p>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title" style="color: #22A699;">Cutting-edge Technology</h5>
+                <p class="card-text" style="color: #22A699;">We leverage the latest technologies to develop innovative solutions for our clients.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title" style="color: #22A699;">Experienced Team</h5>
+                <p class="card-text" style="color: #22A699;">Our team of experts brings years of industry experience to deliver top-notch results.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title" style="color: #22A699;">Client Satisfaction</h5>
+                <p class="card-text" style="color: #22A699;">We prioritize client satisfaction and strive to exceed their expectations in every project.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title" style="color: #22A699;">Customized Solutions</h5>
+                <p class="card-text" style="color: #22A699;">We understand each client's unique needs and provide tailor-made solutions to address them.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
     
-    
+
     <div id="contact">
       <h2>Contact Us</h2>
       <p>Have any questions or want to discuss your project? Get in touch with us:</p>
