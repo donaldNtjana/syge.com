@@ -15,39 +15,31 @@
     }
 
     .navbar {
-      background-color: #F24C3D;
-      color: #ffffff;
-      font-weight: 500;
-      font-size: 16px;
-      position: fixed;
-      top: 0;
-      width: 100%;
-      z-index: 999;
-    }
+  background-color: transparent;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 16px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
 
-    .navbar .navbar-brand {
-      color: #22A699;
-      font-weight: 500;
-      font-size: 20px;
-    }
+.navbar .navbar-brand {
+  color: #22A699;
+  font-weight: 500;
+  font-size: 20px;
+}
 
-    .navbar .navbar-toggler-icon {
-      background-color: #ffffff;
-    }
+.navbar .navbar-toggler-icon {
+  background-color: #ffffff;
+}
 
-    .navbar .nav-link {
-      color: #ffffff;
-      font-weight: 300;
-      font-size: 16px;
-    }
-
-    .jumbotron {
-      background-color: #ffffff;
-      color: #000000;
-      margin-top: 56px; /* Added margin to accommodate the navbar height */
-      position: relative;
-      overflow: hidden;
-    }
+.navbar .nav-link {
+  color: #ffffff;
+  font-weight: 300;
+  font-size: 16px;
+}
 
     .carousel-item {
       height: 400px;
@@ -55,22 +47,13 @@
 
     @media (max-width: 768px) {
       .carousel-item {
-        height: 250 px;
+        height: 250px;
       }
     }
-    
-    .carousel-caption h3,
-    .carousel-caption p,
-    .carousel-control-prev-icon,
-    .carousel-control-next-icon {
+
+    .carousel-caption h1,
+    .carousel-caption p {
       color: black;
-    }
-    h1, p, span, a {
-    font-family: 'Source Sans Pro', sans-serif;
-    }
-    .navbar-nav {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 25px;
     }
 
     .footer {
@@ -83,35 +66,38 @@
 <body>
   <nav class="navbar navbar-expand-md">
     <div class="container">
-      <a class="navbar-brand" href="#" style="font-family: 'Roboto', sans-serif; color: WHITE;">Syge</a>
+      <a class="navbar-brand" href="#">
+        <img src="images/syge-logo.png" alt="Syge Logo" style="height: 30px;">
+      </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#services">Services</a>
+            <a class="nav-link" href="#services" style="color: #22A699;">Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#projects">Projects</a>
+            <a class="nav-link" href="#projects" style="color: #22A699;">Projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
+            <a class="nav-link" href="#contact" style="color: #22A699;">Contact</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
+  
 
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <video src="videos/white_background.mp4" autoplay loop muted></video>
-          <div class="carousel-caption">
-            <h1 class="display-4">Welcome to <span style="color: #22A699;">Syge</span></h1>
-            <p class="lead">We specialize in software development and data analysis</p>
-          </div>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <video src="videos/white_background.mp4" autoplay loop muted></video>
+        <div class="carousel-caption">
+          <h1 class="display-4">Welcome to <span style="color: #22A699;">Syge</span></h1>
+          <p class="lead">We specialize in software development and data analysis</p>
         </div>
+      </div>
     </div>
   </div>
 
@@ -127,27 +113,23 @@
       </ul>
     </div>
 
-    <div id="projects">
-      <h2>Our Projects</h2>
-      <p>Take a look at some of our recent projects:</p>
+    <div id="projects" style="background-color: #F7F7F7; padding: 30px;">
+      <h2 style="color: #000000;">Our Projects</h2>
+      <p style="color: #000000;">Take a look at some of our recent projects:</p>
       <div class="card-deck">
         <div class="card">
-          <img class="card-img-top" src="project1.jpg" alt="Project 1">
-          <div class="card-body">
-            <h5 class="card-title">Project 1</h5>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </div>
-        </div>
-        <div class="card">
-          <img class="card-img-top" src="project2.jpg" alt="Project 2">
-          <div class="card-body">
-            <h5 class="card-title">Project 2</h5>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </div>
+            <h5 class="card-title" style="color: #000000;">School Management System</h5>
+            <ul style="color: #000000;">
+              <li>We have developed a cutting-edge School Management System that revolutionizes the learning experience.</li>
+              <li>Our system enables learners to write tests online, access educational materials, view marks and progress online, and provides an extensive online library with past papers and books.</li>
+              <li>It also empowers teachers and parents with seamless communication and access to relevant information.</li>
+              <li>With our School Management System, we strive to enhance educational efficiency and foster a collaborative learning environment.</li>
+            </ul>
         </div>
       </div>
     </div>
-
+    
+    
     <div id="contact">
       <h2>Contact Us</h2>
       <p>Have any questions or want to discuss your project? Get in touch with us:</p>
@@ -161,4 +143,7 @@
   </footer>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
